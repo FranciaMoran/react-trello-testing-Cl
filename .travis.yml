@@ -5,3 +5,10 @@ cache:
     - node_modules
 env:
   - CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: db09bbe3-c0c6-41cb-8047-f1e88f42e92c
+  app: cryptic-caverns-31986
+  on:
+    repo: FranciaMoran/react-trello-testing-Cl
