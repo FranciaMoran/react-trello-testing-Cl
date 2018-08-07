@@ -8,11 +8,6 @@ describe('<AddForm />', () => {
         shallow(<AddForm />);
     });
 
-    it('Renders the add button initially', () => {
-        const wrapper = shallow(<AddForm />);
-        expect(wrapper.hasClass('add-button')).toEqual(true);
-    });
-
     it('Should render the add form when editing', () => {
         const wrapper = shallow(<AddForm />);
         wrapper.instance().setEditing(true);
